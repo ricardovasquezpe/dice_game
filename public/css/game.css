@@ -1,1 +1,22 @@
-﻿
+﻿body{
+	background-color: #1E88E5;
+	font-family: 'robotomedium';
+}
+
+#button-start{
+	position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: center;
+    color: #c3c3c3;
+}
+#button-start button{
+    background-color: #fff;
+    color: #1E88E5;
+    font-weight: bold;
+    border-radius: 25px;
+    max-width: 200px;
+    width: 100%;
+    height: 45px;
+}
