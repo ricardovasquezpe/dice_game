@@ -81,6 +81,24 @@
 .mdl-input{
 	margin: 10px 0;
 }
+.finish-2{
+	position: absolute;
+    top: 115px;
+    transform: translate(160px);
+    opacity: 0;
+    transition: opacity .7s ease, transform .3s ease;
+    width: 100%;
+    max-width: 500px;
+}
+.trasladar-send {
+    opacity: 1 !important;
+    transform: translate(0px) !important;
+}
+.trasladar {
+    transform: translate(-150px);
+    opacity: 0;
+    transition: opacity .3s ease, transform .7s ease;
+}
 @media ( max-width : 600px) {
 	#game .mdl-card{
 		max-width: 320px;

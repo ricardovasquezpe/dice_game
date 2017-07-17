@@ -11,6 +11,11 @@ function finishGame(){
 	$('#button-start').css("display","none");
 }
 
+function thankLetter(){
+	$('.finish-1').addClass('trasladar');
+	$('.finish-2').addClass('trasladar-send');
+}
+
 var rollTheDice = function() {
     var output = '',
     	faceValue = Math.floor(Math.random() * 6);
