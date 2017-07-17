@@ -15,6 +15,7 @@ var rollTheDice = function() {
     	faceValue = Math.floor(Math.random() * 6);
         output += "&#x268" + faceValue + "; ";
     document.getElementById('dice').innerHTML = output;
+    $("#dice_turn").html((i + 1) + "/3 turns left");
     i++;
     if(i == 3){
     	$("#roll").prop( "disabled", true );
