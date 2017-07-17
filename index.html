@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Dice_game</title>
+    <link rel="stylesheet" href="public/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/plugins/mdl/material.min.css">
+    <link rel="stylesheet" href="public/fonts/material-icons.css">
+    <link rel="stylesheet" href="public/fonts/roboto_new.css">
+    <link rel="stylesheet" href="public/css/m-p.css">
+    <link rel="stylesheet" href="public/css/game.css">
+  </head>
+<body>
+	<div id="button-start">
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="startGame();">Star Game</button>
+	</div>
+	<div id="game">
+		<div class="mdl-card">
+			<div id="contenido" class="col-sm-12">
+				<div class="col-sm-6 p-0">
+					<img src="public/img/dices.png" alt="">
+				</div>
+				<div class="col-sm-6 p-0">
+					<h1>4/6 turns left</h1>
+					<p>Roll dice</p>
+					<div class="dado">
+
+					</div>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Throw</button>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="finishGame();">Finish</button>
+				</div>
+			</div>
+			<div id="finish" class="" style="display:none;">
+				<h1>Game is finished. Please fill in name and score</h1>
+				<div class="col-md-12 text-left mdl-input">
+					<label>Name:</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="col-md-12 text-left mdl-input">
+					<label>Total Score:</label>
+					<input type="text" class="form-control">
+				</div>
+				<div class="col-md-12 mdl-input">
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Send</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="public/js/jquery-3.1.0.min.js"></script>
+    <script src="public/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="public/plugins/mdl/material.min.js"></script>
+    <script src="public/js/game.js"></script>
+</body>
+</html>
