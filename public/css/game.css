@@ -2,6 +2,12 @@
 	background-color: #1E88E5;
 	font-family: 'robotomedium';
 }
+#button-start{
+	z-index:5;
+}
+#game{
+	z-index: 4;
+}
 #game,
 #button-start{
 	position: absolute;
@@ -20,18 +26,25 @@
     width: 100%;
     height: 45px;
     transform: scale(1);
-    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+	  -moz-transition: transform .5s ease;
+	   -ms-transition: transform .5s ease;
+		-o-transition: transform .5s ease;
+		   transition: transform .5s ease;
 }
 #button-start button.desaparecer{
 	transform: scale(0);
 }
 .aparecer{
-	transform: scale(1) !important;
-	display: block !important;
+	opacity: 1 !important;
 }
 #game{
-	transform: scale(0);
-	display: none;
+	opacity: 0;
+	-webkit-transition: opacity 3s ease;
+	  -moz-transition: opacity  3s ease;
+	   -ms-transition: opacity  3s ease;
+		-o-transition: opacity  3s ease;
+		   transition: opacity  3s ease;
 }
 #game .mdl-card{
 	margin: auto;
