@@ -8,6 +8,7 @@ function startGame(){
 function finishGame(){
 	$('#contenido').css("display","none");
 	$('#finish').css("display","block");
+	$('#button-start').css("display","none");
 }
 
 var rollTheDice = function() {
