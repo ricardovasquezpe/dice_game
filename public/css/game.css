@@ -54,6 +54,9 @@
 	color:#757575;
 	padding: 25px;
 }
+#game.dice1 .mdl-card{
+	max-width: 800px;
+}
 #game .mdl-card h1{
 	font-size: 20px;
 	color: #757575;
@@ -65,6 +68,9 @@
     border-radius: 25px;
     transform: scale(1);
     transition: transform .5s ease;
+}
+#game.dice1 button{
+	margin-bottom: 10px;
 }
 .mdl-input button{
 	max-width: 180px;
@@ -99,6 +105,38 @@
     opacity: 0;
     transition: opacity .3s ease, transform .7s ease;
 }
+.mdl-radio__inner-circle{
+	background: #1E88E5;
+}
+.mdl-radio.is-checked .mdl-radio__outer-circle{
+    border: 2px solid #1E88E5;
+}
+.mdl-radio__ripple-container .mdl-ripple{
+	background-color: #1E88E5;	
+}
+.col-md-12 .progress{
+	max-width: 200px;
+	margin: auto;
+	margin-top: 10px;
+}
+.dice1 .dado{
+	text-align: left;
+}
+.imagen1{
+	max-width: 250px;
+	width: 100%;
+}
+.imagen2{
+    max-width: 330px;
+    width: 100%;
+    margin-top: 30px;
+}
+@media ( max-width : 768px) {
+	.col-sm-6.p-0.text-left{
+		text-align: center;
+	}
+}	
+
 @media ( max-width : 600px) {
 	#game .mdl-card{
 		max-width: 320px;
@@ -107,6 +145,8 @@
 		max-width: 270px;
 	}
 }
+
+
 
 #dice {
 	font-size: 6rem;

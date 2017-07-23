@@ -3,6 +3,7 @@
 function startGame(){
 	$('#button-start').find('button').addClass('desaparecer');
 	$('#game').addClass('aparecer');
+    $('#game').css("z-index","10");
 }
 
 function finishGame(){
